@@ -1,4 +1,4 @@
-package spring;
+package com.leehq.spring;
 
 import java.util.List;
 

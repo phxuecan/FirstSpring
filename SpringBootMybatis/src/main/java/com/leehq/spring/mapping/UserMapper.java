@@ -1,4 +1,4 @@
-package spring.mapping;
+package com.leehq.spring.mapping;
 
 import com.leehq.spring.User;
 import org.apache.ibatis.annotations.Mapper;

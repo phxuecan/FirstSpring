@@ -37,7 +37,7 @@ http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springfram
     </bean>
 
     <!--<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.leehq.spring.mapping.UserMapper"/>
+        <property name="mapperInterface" value="com.leehq.UserMapper"/>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>-->
     <!-- mybatis 自动装载 mapper的xml文件 -->
@@ -48,7 +48,7 @@ http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springfram
         <property name="annotationClass" value=""/>
     </bean>
 
-    <!--<bean id="userService" class="com.leehq.spring.UserServiceImpl">
+    <!--<bean id="userService" class="com.leehq.UserServiceImpl">
         <property name="userMapper" ref="userMapper"/>
     </bean>-->
     <!-- ========================================分隔线========================================= -->

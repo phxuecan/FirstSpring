@@ -1,4 +1,4 @@
-package spring;
+package com.leehq.spring;
 
 import com.leehq.spring.mapping.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
