@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.leehq.spring.mapping.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.leehq.spring.User" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="email" property="email" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectByUserName" resultType="com.leehq.spring.User" parameterType="java.lang.String" >
+        select * from user where name = #{name}
+    </select>
+    <!-- ==============以下内容是根据自身业务扩展的内容======================= -->
+    <!-- select标签的id属性与UserMapper接口中定义的getAllUser方法要一模一样 -->
+    <select id="findAll" resultMap="BaseResultMap">
+        select * from user
+    </select>
+
+    <insert id="addNewUser">
+        insert into user (name, email) values (#{name}, #{email})
+    </insert>
+
+    <!--<insert id="addNewUser">
+        <selectKey keyProperty="id" resultType="int">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(name,email) values(#{name},#{email})
+    </insert>-->
+</mapper>
