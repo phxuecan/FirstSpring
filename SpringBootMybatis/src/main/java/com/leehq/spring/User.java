@@ -1,10 +1,5 @@
-package com.leehq.spring;
+package spring;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 /**
  * Created by putao_lhq on 17-4-24.
