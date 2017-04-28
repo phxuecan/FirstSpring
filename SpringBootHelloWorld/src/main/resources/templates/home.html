@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xml:th="http://www.thymeleaf.org" xmlns:th="http://www.springframework.org/schema/data/jaxb">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Spring Boot Contacts</title>
     <link rel="stylesheet" th:href="@{/style.css}"/>
 </head>
 <body>
     <h2> Spring Boot Contacts</h2>
-    <!--<form method="POST">
+    <form method="POST">
         <label for="name">Name:</label>
         <input type="text" name="name"/><br/>
         <label for="phone">Phone:</label>
@@ -15,7 +15,7 @@
         <label for="email">Email:</label>
         <input type="text" name="email"/><br/>
         <input type="submit"/>
-    </form>-->
+    </form>
 
     <ul th:each="contact : ${contacts}">
         <li>

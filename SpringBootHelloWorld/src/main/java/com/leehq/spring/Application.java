@@ -22,7 +22,7 @@ public class Application
         SpringApplication.run(Application.class, args);
     }
 
-    /*@Bean
+    @Bean
     public EmbeddedServletContainerCustomizer containerCustomizer()
     {
         return configurableEmbeddedServletContainer ->
@@ -30,5 +30,5 @@ public class Application
             configurableEmbeddedServletContainer.addErrorPages(new ErrorPage(HttpStatus.BAD_REQUEST, "/error/400.html"));
             configurableEmbeddedServletContainer.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/error/404.html"));
         };
-    }*/
+    }
 }

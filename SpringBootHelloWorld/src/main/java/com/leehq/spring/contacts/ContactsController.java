@@ -44,6 +44,6 @@ public class ContactsController
     public String subcommit(Contact contact)
     {
         contactRepository.save(contact);
-        return "redirect:/";
+        return "redirect:/contacts";
     }
 }
