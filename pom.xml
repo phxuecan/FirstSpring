@@ -17,5 +17,6 @@
         <module>SpringBootHelloWorld</module>
         <module>SpringBootMybatis</module>
         <module>SpringMVC</module>
+        <module>SpringBootSecurity</module>
     </modules>
 </project>
