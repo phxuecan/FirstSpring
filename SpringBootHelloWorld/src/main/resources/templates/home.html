@@ -19,10 +19,11 @@
 
     <ul th:each="contact : ${contacts}">
         <li>
-            <span th:text="${contact.name}">name</span>
+            <span th:text="${contact.name}">name</span>,
             <span th:text="${contact.phone}">phone</span>,
             <span th:text="${contact.email}">email</span>
         </li>
     </ul>
+
 </body>
 </html>

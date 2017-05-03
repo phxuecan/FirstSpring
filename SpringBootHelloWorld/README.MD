@@ -55,3 +55,16 @@ Error Handler
 
 No message available
 ```
+#### 通过定制EmbeddedServletContainerCustomizer来添加错误页面
+另外一种方式,则通过定制EmbeddedServletContainerCustomizer来添加错误页面:
+```
+@Bean
+    public EmbeddedServletContainerCustomizer containerCustomizer()
+    {
+        return configurableEmbeddedServletContainer ->
+        {
+            configurableEmbeddedServletContainer.addErrorPages(new ErrorPage(HttpStatus.BAD_REQUEST, "/400.html"));
+            configurableEmbeddedServletContainer.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404.html"));
+        };
+    }
+```
